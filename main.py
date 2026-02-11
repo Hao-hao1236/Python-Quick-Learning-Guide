@@ -1,6 +1,6 @@
 from time import sleep
 
-def output(message, delay=3):
+def output(message, delay=2):
     print(message)
     sleep(delay)
 
@@ -25,4 +25,7 @@ omput_possibility = ["print(\"Hello, world!\")",
 string = input("试一试吧~\n1   ")
 while string not in omput_possibility:
     string = input("输入错误，再试一次吧~\n1   ")
+output("=====RESTART: Python3 App=====\n" + \
+       string[7 if string[5] == ' ' else 8:-2] , 
+       delay=0)
 output("恭喜你，完成了你的第一个Python程序！")
