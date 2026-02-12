@@ -54,9 +54,9 @@ list = string.split('=')
 while len(list) != 2 or list[0].strip() != 'name' or not list[1].strip().startswith('"') or not list[1].strip().endswith('"'):
     string = input("输入错误，再试一次吧~\n2   ")
     list = string.split('=')
+
 string = input("3   ")
 list = string.split('=')
-
 while len(list) != 2 or list[0].strip() != 'is_student' or not list[1].strip().lower() in ['true', 'false']:
     string = input("输入错误，再试一次吧~\n3   ")
     list = string.split('=')
