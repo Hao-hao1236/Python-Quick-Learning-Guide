@@ -31,7 +31,7 @@ def output(message, delay=2):
 # string = input("试一试吧~（尽量使用英文半角输入）\n1   ").strip()
 # while string not in output_possibility:
 #     string = input("输入错误，再试一次吧~\n1   ").strip()
-# output("=====RESTART: Python3 App=====\n" + \
+# output("=====RESTART: Python3 App output screen=====\n" + \
 #        string[8 if string[5] == ' ' else 7:-2])
 
 # output("恭喜你，完成了你的第一个Python程序！")
@@ -63,7 +63,7 @@ def output(message, delay=2):
 #     string = input("输入错误，再试一次吧~\n3   ")
 #     parts = string.split('=')
 
-# output("=====RESTART: Python3 App=====\n")
+# output("=====RESTART: Python3 App output screen=====\n")
 
 # output("看起来并没有输出。")
 string = input("接下来试着用print()函数输出这些变量的值吧！（如果想要提示可直接按下回车键）\n4   ")
