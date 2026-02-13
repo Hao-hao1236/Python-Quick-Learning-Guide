@@ -90,3 +90,13 @@ def output(message, delay=2):
 # check_input(6)
 
 # output("=====RESTART: Python3 App running screen=====\n25\nAlice\nTrue\n")
+
+# output("恭喜你，掌握了Python的变量和数据类型！")
+# output("----------------------------------", delay=5)
+
+output("2. 控制结构")
+output("控制结构用于控制代码的执行流程。常见的控制结构包括条件语句（if、elif、else）和循环语句（for、while）。")
+output("示例代码：\n1   age = 20\n2   if age >= 18:\n3       print(\"你是成年人\")\n4   else:\n5       print(\"你是未成年人\")", delay=0)
+string = input("试一试吧~\n1   ")
+while string.strip() != "age = 20":
+    string = input("输入错误，再试一次吧~\n1   ")
