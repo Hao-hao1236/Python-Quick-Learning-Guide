@@ -13,7 +13,7 @@ def output(message, delay=2):
 
 
 # output("要求：输出\"Hello, world!\"")
-# output("示例代码：\n    print(\"Hello, world!\")", delay=0)
+# output("示例代码：\n1   print(\"Hello, world!\")", delay=0)
 
 # output_possibility = ["print(\"Hello, world!\")",
 #                      "print('Hello, world!')",
@@ -31,7 +31,7 @@ def output(message, delay=2):
 # string = input("试一试吧~（尽量使用英文半角输入）\n1   ").strip()
 # while string not in output_possibility:
 #     string = input("输入错误，再试一次吧~\n1   ").strip()
-# output("=====RESTART: Python3 App output screen=====\n" + \
+# output("=====RESTART: Python3 App running screen=====\n" + \
 #        string[8 if string[5] == ' ' else 7:-2])
 
 # output("恭喜你，完成了你的第一个Python程序！")
@@ -63,11 +63,26 @@ def output(message, delay=2):
 #     string = input("输入错误，再试一次吧~\n3   ")
 #     parts = string.split('=')
 
-# output("=====RESTART: Python3 App output screen=====\n")
+# output("=====RESTART: Python3 App running screen=====\n")
 
 # output("看起来并没有输出。")
 string = input("接下来试着用print()函数输出这些变量的值吧！（如果想要提示可直接按下回车键）\n4   ")
-if string.strip() == "":
-    output("示例代码：\n1   print(age)\n2   print(name)\n3   print(is_student)", delay=0)
-while True:  # 换种方法检查用户输入
-    
+var_list = ['age', 'name', 'is_student']
+
+def check_input(line):
+    global string, var_list
+    while True:
+        if string.strip() == "":
+            output("示例代码：\n4   print(age)\n5   print(name)\n6   print(is_student)", delay=0)
+        elif string[:6] == "print(" and string[-1] == ")":
+            if string[6:-1].strip() in var_list:
+                del var_list[var_list.index(string[6:-1].strip())]
+                break
+            else:
+                string = input(f"输入错误，再试一次吧~\n{line}   ")
+        else:
+            string = input(f"输入错误，再试一次吧~\n{line}   ")
+
+check_input(4)
+check_input(5)
+check_input(6)
