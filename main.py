@@ -66,23 +66,27 @@ def output(message, delay=2):
 # output("=====RESTART: Python3 App running screen=====\n")
 
 # output("看起来并没有输出。")
-string = input("接下来试着用print()函数输出这些变量的值吧！（如果想要提示可直接按下回车键）\n4   ")
-var_list = ['age', 'name', 'is_student']
+# var_list = ['age', 'name', 'is_student']
 
-def check_input(line):
-    global string, var_list
-    while True:
-        if string.strip() == "":
-            output("示例代码：\n4   print(age)\n5   print(name)\n6   print(is_student)", delay=0)
-        elif string[:6] == "print(" and string[-1] == ")":
-            if string[6:-1].strip() in var_list:
-                del var_list[var_list.index(string[6:-1].strip())]
-                break
-            else:
-                string = input(f"输入错误，再试一次吧~\n{line}   ")
-        else:
-            string = input(f"输入错误，再试一次吧~\n{line}   ")
+# output("接下来试着用print()函数输出这些变量的值吧！（如果想要提示可直接按下回车键）")
 
-check_input(4)
-check_input(5)
-check_input(6)
+# def check_input(line):
+#     global var_list
+#     while True:
+#         string = input(f"{line}   ")
+#         if string.strip() == "":
+#             output("示例代码：\n4   print(age)\n5   print(name)\n6   print(is_student)\n再试试看~", delay=0)
+#         elif string[:6] == "print(" and string[-1] == ")":
+#             if string[6:-1].strip() in var_list:
+#                 del var_list[var_list.index(string[6:-1].strip())]
+#                 break
+#             else:
+#                 print("输入错误，再试一次吧~")
+#         else:
+#             print("输入错误，再试一次吧~")
+
+# check_input(4)
+# check_input(5)
+# check_input(6)
+
+# output("=====RESTART: Python3 App running screen=====\n25\nAlice\nTrue\n")
