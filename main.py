@@ -59,7 +59,8 @@ def output(message, delay=2):
 
 # string = input("3   ")
 # parts = string.split('=')
-# while len(parts) != 2 or parts[0].strip() != 'is_student' or not parts[1].strip().lower() in ['true', 'false']:
+# while len(parts) != 2 or parts[0].strip() != \
+#                       'is_student' or not parts[1].strip().lower() in ['true', 'false']:
 #     string = input("输入错误，再试一次吧~\n3   ")
 #     parts = string.split('=')
 
@@ -110,12 +111,15 @@ def output(message, delay=2):
 # while string != "    print(\"You are an adult!\")" and string.strip() != "    print('You are an adult!')":
 #     string = input("输入错误，再试一次吧~\n3   ")
 # output("=====RESTART: Python3 App running screen=====\nYou are an adult!\n")
-# output("代码说明：\n1. 定义了一个变量age并赋值为20。\n2. 使用if语句检查age是否大于或等于18。\n3. 如果条件为真，执行print语句输出\"You are an adult!\"。")
+# output("代码说明：\n1. 定义了一个变量age并赋值为20。\n2. 使用if语句检查age是否大于或等于18。" + \
+#        "\n3. 如果条件为真，执行print语句输出\"You are an adult!\"。")
 # output("恭喜你，掌握了if条件语句！")
+# output("----------------------------------", delay=5)
 
 # output("2-2. if-else条件语句")
 # output("if-else条件语句用于在条件为假时执行另一个代码块。")
-# output("示例代码：\n1   age = 20\n2   if age >= 18:\n3       print(\"You are an adult!\")\n4   else:\n5       print(\"You are a minor!\")", delay=0)
+# output("示例代码：\n1   age = 20\n2   if age >= 18:\n3       print(\"You are an adult!\")" + \
+#        "\n4   else:\n5       print(\"You are a minor!\")", delay=0)
 # string = input("试一试吧~\n1   ")
 # while string.strip() != "age = 20":
 #     string = input("输入错误，再试一次吧~\n1   ")
@@ -135,3 +139,39 @@ def output(message, delay=2):
 # output("=====RESTART: Python3 App running screen=====\nYou are an adult!\n")
 # output("代码说明：\n1. 定义了一个变量age并赋值为20。\n2. 使用if语句检查age是否大于或等于18。\n3. 如果条件为真，执行print语句输出\"You are an adult!\"。\n4. 如果条件为假，执行else块中的print语句输出\"You are a minor!\"。")
 # output("恭喜你，掌握了if-else条件语句！")
+# output("----------------------------------", delay=5)
+
+output("2-3. if-elif-else条件语句")
+output("if-elif-else条件语句用于检查多个条件，并根据第一个满足条件的代码块执行。")
+output("示例代码：\n1   age = 20\n2   if age < 13:\n3       print(\"You are a child!\")\n" + \
+       "4   elif age < 18:\n5       print(\"You are a teenager!\")\n" + \
+       "6   else:\n7       print(\"You are an adult!\")", delay=0)
+string = input("试一试吧~\n1   ")
+while string.strip() != "age = 20" and string.strip() != "age=20":
+    string = input("输入错误，再试一次吧~\n1   ")
+string = input("2   ")
+while string.strip() != "if age < 13:" and string.strip() != "if age<13:":
+    string = input("输入错误，再试一次吧~\n2   ")
+string = input("3   ")
+while string != "    print(\"You are a child!\")" and string.strip() != "    print('You are a child!')":
+    string = input("输入错误，再试一次吧~\n3   ")
+string = input("4   ")
+while string.strip() != "elif age < 18:" and string.strip() != "elif age<18:":
+    string = input("输入错误，再试一次吧~\n4   ")
+string = input("5   ")
+while string != "    print(\"You are a teenager!\")" and string.strip() != "    print('You are a teenager!')":
+    string = input("输入错误，再试一次吧~\n5   ")
+string = input("6   ")
+while string.strip() != "else:":
+    string = input("输入错误，再试一次吧~\n6   ")
+string = input("7   ")
+while string != "    print(\"You are an adult!\")" and string.strip() != "    print('You are an adult!')":
+    string = input("输入错误，再试一次吧~\n7   ")
+output("=====RESTART: Python3 App running screen=====\nYou are an adult!\n")
+output("代码说明：\n1. 定义了一个变量age并赋值为20。\n2. 使用if语句检查age是否小于13。\n" + \
+       "3. 如果条件为真，执行print语句输出\"You are a child!\"。\n4. 使用elif语句检查age是否小于18。\n" + \
+       "5. 如果条件为真，执行print语句输出\"You are a teenager!\"。\n" + \
+       "6. 如果前面的条件都不满足，执行else块中的print语句输出\"You are an adult!\"。")
+output("恭喜你，掌握了if-elif-else条件语句！")
+output("----------------------------------", delay=5)
+
