@@ -189,3 +189,12 @@ def output(message, delay=2):
 # output("代码说明：\n1. 使用for循环和range函数创建一个循环，循环变量i从0到4。\n" + \
 #        "2. 在每次循环中，使用print函数输出当前的循环变量i的值。")
 # output("----------------------------------", delay=5)
+
+output("2.4.2. 序列循环")
+output("示例代码：\n1   fruits = [\"apple\", \"banana\", \"cherry\"]\n2   for fruit in fruits:\n3       print(fruit)", delay=0)
+string = input("试一试吧~\n1   ")
+while (string.strip() != "fruits = [\"apple\", \"banana\", \"cherry\"]" and string.strip() != "fruits=[\"apple\", \"banana\", \"cherry\"]")\
+        or (string.strip() != "fruits = ['apple', 'banana', 'cherry']" and string.strip() != "fruits=['apple', 'banana', 'cherry']")\
+        or (string.strip() != "fruits=[\"apple\",\n\"banana\",\n\"cherry\"]" and string.strip() != "fruits=['apple',\n'banana',\n'cherry']")\
+        or (string.strip() != "fruits=[\"apple\", \"banana\",\n\"cherry\"]" and string.strip() != "fruits=['apple', 'banana',\n'cherry']"):
+    string = input("输入错误，再试一次吧~\n1   ")
