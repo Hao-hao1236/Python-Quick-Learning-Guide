@@ -198,3 +198,15 @@ while (string.strip() != "fruits = [\"apple\", \"banana\", \"cherry\"]" and stri
         or (string.strip() != "fruits=[\"apple\",\n\"banana\",\n\"cherry\"]" and string.strip() != "fruits=['apple',\n'banana',\n'cherry']")\
         or (string.strip() != "fruits=[\"apple\", \"banana\",\n\"cherry\"]" and string.strip() != "fruits=['apple', 'banana',\n'cherry']"):
     string = input("输入错误，再试一次吧~\n1   ")
+string = input("2   ")
+while string.strip() != "for fruit in fruits:":
+    string = input("输入错误，再试一次吧~\n2   ")
+string = input("3   ")
+while string != "    print(fruit)" and string != "    print(fruit)":
+    string = input("输入错误，再试一次吧~\n3   ")
+output("=====RESTART: Python3 App running screen=====\napple\nbanana\ncherry\n")
+output("代码说明：\n1. 定义了一个列表fruits，包含三个字符串元素\"apple\"、\"banana\"和\"cherry\"。\n" + \
+       "2. 使用for循环遍历列表fruits，每次循环将当前元素赋值给变量fruit。\n" + \
+       "3. 在每次循环中，使用print函数输出当前的变量fruit的值。")
+output("恭喜你，掌握了for循环语句！")
+output("----------------------------------", delay=5)
