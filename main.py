@@ -224,24 +224,27 @@ def output(message, delay=2):
 # output("恭喜你，掌握了for循环语句！")
 # output("----------------------------------", delay=5)
 
-output("2-5. while循环语句")
-output("while循环语句用于在条件为真时重复执行代码块。")
-output("格式：\nwhile 条件:\n    代码块\n")
-output("示例代码：\n1   count = 0\n2   while count < 5:\n3       print(count)\n4       count += 1", delay=0)
-string = input("试一试吧~\n1   ")
-while string.strip() != "count = 0" and string.strip() != "count=0":
-    string = input("输入错误，再试一次吧~\n1   ")
-string = input("2   ")
-while string.strip() != "while count < 5:" and string.strip() != "while count<5:":
-    string = input("输入错误，再试一次吧~\n2   ")
-string = input("3   ")
-while string != "    print(count)" and string.strip() != "    print(count)":
-    string = input("输入错误，再试一次吧~\n3   ")
-string = input("4   ")
-while string.strip() != "count += 1" and string.strip() != "count+=1":
-    string = input("输入错误，再试一次吧~\n4   ")
-output("=====RESTART: Python3 App running screen=====\n0\n1\n2\n3\n4\n")
-output("代码说明：\n1. 定义了一个变量count并赋值为0。\n2. 使用while循环检查count是否小于5。\n" + \
-       "3. 如果条件为真，执行循环体中的代码块：输出当前的count值，并将count的值增加1。\n4. 当count的值达到5时，条件变为假，循环结束。")
-output("恭喜你，掌握了while循环语句！")
-output("----------------------------------", delay=5)
+# output("2-5. while循环语句")
+# output("while循环语句用于在条件为真时重复执行代码块。")
+# output("格式：\nwhile 条件:\n    代码块\n")
+# output("示例代码：\n1   count = 0\n2   while count < 5:\n3       print(count)\n4       count += 1", delay=0)
+# string = input("试一试吧~\n1   ")
+# while string.strip() != "count = 0" and string.strip() != "count=0":
+#     string = input("输入错误，再试一次吧~\n1   ")
+# string = input("2   ")
+# while string.strip() != "while count < 5:" and string.strip() != "while count<5:":
+#     string = input("输入错误，再试一次吧~\n2   ")
+# string = input("3   ")
+# while string != "    print(count)" and string.strip() != "    print(count)":
+#     string = input("输入错误，再试一次吧~\n3   ")
+# string = input("4   ")
+# while string.strip() != "count += 1" and string.strip() != "count+=1":
+#     string = input("输入错误，再试一次吧~\n4   ")
+# output("=====RESTART: Python3 App running screen=====\n0\n1\n2\n3\n4\n")
+# output("代码说明：\n1. 定义了一个变量count并赋值为0。\n2. 使用while循环检查count是否小于5。\n" + \
+#        "3. 如果条件为真，执行循环体中的代码块：输出当前的count值，并将count的值增加1。\n4. 当count的值达到5时，条件变为假，循环结束。")
+# output("恭喜你，掌握了while循环语句！")
+# output("----------------------------------", delay=5)
+
+output("现在解释为什么每个类似if、else、for的词语下的一行都要空几个格，\n" + \
+       )
