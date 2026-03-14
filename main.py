@@ -246,5 +246,29 @@ def output(message, delay=2):
 # output("恭喜你，掌握了while循环语句！")
 # output("----------------------------------", delay=5)
 
-output("现在解释为什么每个类似if、else、for的词语下的一行都要空几个格，\n" + \
-       )
+# output("现在解释为什么每个类似if、else、for的词语下的一行都要空几个格，\n" + \
+#        "这是Python的语法要求，称为缩进。缩进用于表示代码块的开始和结束，\n" + \
+#        "在if、else、for等控制结构中，缩进的代码块表示在条件满足时或循环中要执行的代码。")
+# output("在Python中，通常使用4个空格作为一个缩进级别。保持一致的缩进对于代码的可读性和正确性非常重要。")
+# output("如果缩进不正确，Python会抛出IndentationError错误，提示你代码块的缩进不一致。")
+# output("所以，在编写Python代码时，请确保在控制结构下的代码块使用正确的缩进，这样你的代码才能正确运行！")
+# output("恭喜你，掌握了Python的基本语法！")
+# output("----------------------------------", delay=5)
+
+output("3. 数据结构与高级存储")
+output("Python提供了多种内置的数据结构，如列表(list)、元组(tuple)、字典(dict)和集合(set)等等。这些数据结构可以帮助你更高效地存储和操作数据。")
+output("3.1. 列表(list)")
+output("列表是一种有序的可变数据结构，可以存储任意类型的元素。")
+output("在2.4.2中我们已经介绍了列表的定义和遍历，接下来我们来看看列表的其他操作。")
+output("3.1.1. 列表的定义、添加和删除")
+output("定义列表：\nfruits = [\"apple\", \"banana\", \"cherry\"]")
+output("添加元素：\nfruits.append(\"orange\")  # 在列表末尾添加元素\nfruits.insert(1, \"grape\")  # 在索引1的位置插入元素")
+output("删除元素：\nfruits.remove(\"banana\")  # 删除列表中第一个匹配的元素\nfruits.pop(2)  # 删除并返回索引2的元素")
+output("3.1.2. 列表的切片")
+output("切片用于获取列表的子列表。")
+output("格式：\nlist[start:end:step]\n其中，start是切片的起始索引，end是切片的结束索引（不包含end），step是切片的步长。")
+output("示例代码：\nfruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"fig\"]\nslice1 = fruits[1:4]  # 获取索引1到3的元素\nslice2 = fruits[:3]  # 获取前3个元素\nslice3 = fruits[::2]  # 获取所有元素，步长为2")
+output("3.1.3. 列表的其他方法")
+output("列表还有许多其他有用的方法，如sort()用于排序，reverse()用于反转列表，count()用于统计元素出现的次数等等。")
+output("示例代码：\nfruits = [\"banana\", \"apple\", \"cherry\", \"banana\"]\nfruits.sort()  # 对列表进行排序\nfruits.reverse()  # 反转列表\nbanana_count = fruits.count(\"banana\")  # 统计\"banana\"出现的次数")
+output("3.2. 元组(tuple)")
