@@ -20,4 +20,4 @@ while text != "exit()":
             part.append(i)
             _text = text[n+1:]
             part.append(_text)
-    
+    print(text)
