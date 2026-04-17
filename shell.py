@@ -13,11 +13,7 @@ text = None
 while text != "exit()":
     text = input(">>> ")
     part = []
+    n = 0
     for i in text:
         if i in symbols:
-            n = text.index(i)
-            part.append(text[:n])
-            part.append(i)
-            _text = text[n+1:]
-            part.append(_text)
-    print(text)
+            pass
